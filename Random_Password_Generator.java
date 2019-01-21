@@ -16,16 +16,17 @@ public class Random_Password_Generator {
 	public static String makePassword(int length) {
 		String password = "";
 
-		for (int i = 0; i < length - 3; i++) {
-			password = password + randomCharacter("abcdefghijklmopqrstuvwxyz");
+		for (int i = 0; i < length - 2; i++) {
+			password = password + randomCharacter("abcdefghijklmopqrstuvwxyz" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "0123456789");
 	}
 
 	String randomDigit = randomCharacter("0123456789");
 	password = insertAtRandom(password, randomDigit);
-	String randomSymbol = randomCharacter("+-*/?!@#$%&_");
+	String randomSymbol = randomCharacter("+-*/?!@#$%&_()^{}[]:;><");
 	password = insertAtRandom(password, randomSymbol);
-	String randomUpper = randomCharacter("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-	password = insertAtRandom(password, randomUpper);
+	System.out.println("Generating a random password... ");
+	System.out.println("");
+	System.out.print("Your random password is: ");
 	return password;
 }
 /**
@@ -37,7 +38,7 @@ public class Random_Password_Generator {
 		return characters.substring(r, r + 1);
 	}
 /**
-	Insert one string into another at a random position
+	Inserts one string into another at a random position
  */
 	public static String insertAtRandom(String str, String toInsert) {
 		int n = str.length();
