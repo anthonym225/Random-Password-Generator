@@ -1,8 +1,9 @@
+package random_password_generator;
 /**
 Random Password Generator: Lower, Upper, Symbol.
 @auth Anthony Martino
 **/
-
+import java.util.Scanner; //Imports scanner
 public class Random_Password_Generator {
 /**
 	Generate password
@@ -10,20 +11,30 @@ public class Random_Password_Generator {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String result = makePassword(12);
+		/**
+		Ask user how many characters they would like password to be
+	 */
+
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter desired password length: ");
+		int i = input.nextInt();
+
+		String result = makePassword(i);
 		System.out.println(result);
 	}
 	public static String makePassword(int length) {
 		String password = "";
 
 		for (int i = 0; i < length - 2; i++) {
-			password = password + randomCharacter("abcdefghijklmopqrstuvwxyz" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "0123456789");
+			password = password + randomCharacter("abcdefghijklmopqrstuvwxyz" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "0123456789" + "+-*/?!@#$%&_()^{}[]:;><");
 	}
 
 	String randomDigit = randomCharacter("0123456789");
 	password = insertAtRandom(password, randomDigit);
 	String randomSymbol = randomCharacter("+-*/?!@#$%&_()^{}[]:;><");
 	password = insertAtRandom(password, randomSymbol);
+
+
 	System.out.println("Generating a random password... ");
 	System.out.println("");
 	System.out.print("Your random password is: ");
