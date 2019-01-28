@@ -8,7 +8,7 @@ A simple random password generator with uppercase and lowercase characters, numb
 ### What I learned through this project:
 * Practiced with simple Java commands
 * Use java.util.scanner to ask for user input, then using that for final output
-* Combine strings with one another
+* Insert one string into another randomly
 
 
 ### Future goals with this program:
