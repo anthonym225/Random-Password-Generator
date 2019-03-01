@@ -1,7 +1,7 @@
 # Random Password Generator - Side project | Spring 2019
 ### What it is:
 
-A simple random password generator with uppercase and lowercase characters, numbers and symbols. Will ask user how long they would like the password to be.
+A simple random password generator with **_uppercase_** characters, **_lowercase_** characters, **_numbers_** and **_symbols_**. Will ask user how long they would like the password to be, and what it will be used for. Then saves the password to a .txt file.
 
 ![example](https://github.com/anthonym225/Random-Password-Generator/blob/master/Example.png)
 
@@ -9,11 +9,11 @@ A simple random password generator with uppercase and lowercase characters, numb
 * Practiced with simple Java commands
 * Use java.util.scanner to ask for user input, then using that for final output
 * Insert one string into another randomly
+* Use PrintWriter to save output to a local file
 
 
 ### Future goals with this program:
-* Create a UI
-* Automatic copy to clipboard
-* Encrypt-a-password feature
-
-
+- [x] ~~Automatically save to a file~~
+- [ ] Create a UI
+- [ ] Create a mobile app
+- [ ] Encrypt-a-password feature
