@@ -4,7 +4,7 @@
 A simple random password generator with **_uppercase_** characters, **_lowercase_** characters, **_numbers_** and **_symbols_**. Will ask user how long they would like the password to be, and what it will be used for. Then saves the password to a .txt file.
 
 ![example](https://github.com/anthonym225/Random-Password-Generator/blob/master/NewEx1.png)
-![example](https://github.com/anthonym225/Random-Password-Generator/blob/master/NewEx1P2.png)
+
 
 ### What I learned through this project:
 * Practiced with simple Java commands
