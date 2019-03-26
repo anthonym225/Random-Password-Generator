@@ -5,38 +5,7 @@ Random Password Generator: Lower, Upper, Symbol.
 import java.io.*;
 import java.util.Scanner; //Imports scanner for user input
 public class Random_Password_Generator {
-	/**
-	Generate password
- 	*/
-	public static void main(String[] args) {
 
-		/**
-		Ask user how many characters they would like password to be
-	  */
-
-		Scanner input = new Scanner(System.in);
-		System.out.println("Enter desired password length: ");
-		int i = input.nextInt();
-		input.nextLine();
-
-		System.out.println("What is this password for?: ");
-		String passFor = input.nextLine();
-
-		String result = makePassword(i);
-		System.out.println(result);
-		input.close();
-
-		File fileName = new File ("rPass.txt");
-		try{
-		PrintWriter outputStream = new PrintWriter(new FileWriter(fileName, true));
-		outputStream.append(result + " - " + passFor + "\n");
-		outputStream.close();
-	} catch(IOException e) {
-		e.printStackTrace();
-	}
-
-
-	}
 	public static String makePassword(int length) {
 		String password = "";
 
@@ -71,6 +40,37 @@ public class Random_Password_Generator {
 		int r = (int) ((n  + 1) * Math.random());
 		return str.substring(0, r) + toInsert + str.substring(r);
 
+	}
+
+	/**
+	Generate password
+	*/
+	public static void main(String[] args) {
+
+		/**
+		Ask user how many characters they would like password to be
+		*/
+
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter desired password length: ");
+		int i = input.nextInt();
+		input.nextLine();
+
+		System.out.println("What is this password for?: ");
+		String passFor = input.nextLine();
+
+		String result = makePassword(i);
+		System.out.println(result);
+		input.close();
+
+		File fileName = new File ("rPass.txt");
+		try{
+			PrintWriter outputStream = new PrintWriter(new FileWriter(fileName, true));
+			outputStream.append(result + " - " + passFor + "\n");
+			outputStream.close();
+		} catch(IOException e) {
+			e.printStackTrace();
+			}
 	}
 
 
