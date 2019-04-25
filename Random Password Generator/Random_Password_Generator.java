@@ -41,11 +41,6 @@ public class Random_Password_Generator {
 	Generate password
 	*/
 	public static void main(String[] args) {
-
-		/**
-		Ask user how many characters they would like password to be
-		*/
-
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter desired password length: ");
 		int i = input.nextInt();
