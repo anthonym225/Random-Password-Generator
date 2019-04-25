@@ -1,12 +1,12 @@
 import java.io.*;
-import java.util.Scanner; //Imports scanner for user input
+import java.util.Scanner; 
 public class Random_Password_Generator {
 
 	public static String makePassword(int length) {
 		String password = "";
 
 		for (int i = 0; i < length - 2; i++) {
-			password = password + randomCharacter("abcdefghijklmopqrstuvwxyz" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "0123456789" + "+-*/?!@#$%&_()^{}[]:;><");
+			password = password + randomCharacter("abcdefghijklmopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ]0123456789+-*/?!@#$%&_()^{}[]:;><");
 	}
 
 		String randomDigit = randomCharacter("0123456789");
@@ -48,11 +48,11 @@ public class Random_Password_Generator {
 		*/
 
 		Scanner input = new Scanner(System.in);
-		System.out.println("Enter desired password length: ");
+		System.out.print("Enter desired password length: ");
 		int i = input.nextInt();
 		input.nextLine();
 
-		System.out.println("What is this password for?: ");
+		System.out.print("What is this password for?: ");
 		String passFor = input.nextLine();
 
 		String result = makePassword(i);
