@@ -9,16 +9,16 @@ public class Random_Password_Generator {
 			password = password + randomCharacter("abcdefghijklmopqrstuvwxyz" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "0123456789" + "+-*/?!@#$%&_()^{}[]:;><");
 	}
 
-	String randomDigit = randomCharacter("0123456789");
-	password = insertAtRandom(password, randomDigit);
-	String randomSymbol = randomCharacter("+-*/?!@#$%&_()^{}[]:;><");
-	password = insertAtRandom(password, randomSymbol);
+		String randomDigit = randomCharacter("0123456789");
+		password = insertAtRandom(password, randomDigit);
+		String randomSymbol = randomCharacter("+-*/?!@#$%&_()^{}[]:;><");
+		password = insertAtRandom(password, randomSymbol);
 
 
-	System.out.println("Generating a random password... ");
-	System.out.println("");
-	System.out.print("Your random password is: ");
-	return password;
+		System.out.println("Generating a random password... ");
+		System.out.println();
+		System.out.print("Your random password is: ");
+		return password;
 }
 		/**
     Get random character from string
