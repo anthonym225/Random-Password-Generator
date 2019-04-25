@@ -1,7 +1,8 @@
 import java.io.*;
-import java.util.Scanner; 
+import java.util.Scanner;
 public class Random_Password_Generator {
 
+	// Create Password
 	public static String makePassword(int length) {
 		String password = "";
 
@@ -20,17 +21,15 @@ public class Random_Password_Generator {
 		System.out.print("Your random password is: ");
 		return password;
 }
-		/**
-    Get random character from string
- 		*/
+
+  // Get random character from string
 	public static String randomCharacter(String characters) {
 		int n = characters.length();
 		int r = (int) (n * Math.random());
 		return characters.substring(r, r + 1);
 	}
-	/**
-	Inserts one string into another at a random position
- 	*/
+
+	// Inserts one string into another at a random position
 	public static String insertAtRandom(String str, String toInsert) {
 		int n = str.length();
 		int r = (int) ((n  + 1) * Math.random());
