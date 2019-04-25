@@ -43,13 +43,13 @@ public class Random_Password_Generator {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter desired password length: ");
-		int i = input.nextInt();
+		int lng = input.nextInt();
 		input.nextLine();
 
 		System.out.print("What is this password for?: ");
 		String passFor = input.nextLine();
 
-		String result = makePassword(i);
+		String result = makePassword(lng);
 		System.out.println(result);
 		input.close();
 
