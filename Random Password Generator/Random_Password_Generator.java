@@ -1,7 +1,3 @@
-/**
-Random Password Generator: Lower, Upper, Symbol.
-@auth Anthony Martino
-**/
 import java.io.*;
 import java.util.Scanner; //Imports scanner for user input
 public class Random_Password_Generator {
