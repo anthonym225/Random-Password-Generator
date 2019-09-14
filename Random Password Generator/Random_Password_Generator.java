@@ -32,7 +32,7 @@ public class Random_Password_Generator {
 	// Inserts one string into another at a random position
 	public static String insertAtRandom(String str, String toInsert) {
 		int n = str.length();
-		int r = (int) ((n  + 1) * Math.random());
+		int r = (int) ((n + 1) * Math.random());
 		return str.substring(0, r) + toInsert + str.substring(r);
 
 	}
@@ -62,6 +62,4 @@ public class Random_Password_Generator {
 			e.printStackTrace();
 			}
 	}
-
-
 }
