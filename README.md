@@ -15,6 +15,6 @@ A simple random password generator with **_uppercase_** characters, **_lowercase
 
 ### Future goals with this program:
 - [x] ~~Automatically save to a file~~
-- [ ] Create a UI
+- [ ] Create a webapp
 - [ ] Create a mobile app
 - [ ] Encrypt-a-password feature
